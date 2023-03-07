@@ -21,6 +21,10 @@ public class Todo {
         this.description = description;
     }
 
+    public String getTask() {
+        return task;
+    }
+
     public Person getPerson() {
         return person;
     }
@@ -38,17 +42,14 @@ public class Todo {
     }
 
     public boolean highPriority() {
-        System.out.printf("Czy zadanie: %s ma wysoki priorytet? ", task);
         return priority > 0;
     }
 
     public boolean mediumPriority() {
-        System.out.printf("Czy zadanie: %s ma średni priorytet? ", task);
         return priority == 0;
     }
 
     public boolean lowPriority() {
-        System.out.printf("Czy zadanie: %s ma niski priorytet? ", task);
         return priority < 0;
     }
 }
